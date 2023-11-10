@@ -8,8 +8,7 @@ body, html {
 
 .background-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 65px;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -18,22 +17,21 @@ body, html {
 }
 
 .h1 {
-    color: black; /* Or any color that contrasts well with your background image */
+    color: black; 
+    margin-top: -10px;
     text-align: center;
-    margin-top: 20px;
     font-size: 36px;
 }
 
 .section-header {
     margin: 5px 10px;
     text-align: left;
-    margin-top: 20px;
     font-size: 24px;
-    color: #333;
+    color: black;
 }
 
 .gallery-section, .links-section {
-    margin-top: 8%; /* Move down sections */
+    margin-top: 5%; /* Move down sections */
 }
 
 .gallery img {
@@ -42,12 +40,11 @@ body, html {
     height: auto;
 }
 
-##Buttons
 .site-links a {
     display: inline-block;
     margin: 5px 10px;
     padding: 10px 15px;
-    color: blue;
+    color: #151E3D;
     background-color: #D3D3D3;
     border: 2px solid;
     border-radius: 5px;
@@ -57,6 +54,6 @@ body, html {
 }
 
 .site-links a:hover {
-    background-color: #FFFFE0;
+    background-color: yellow;
 }
 
