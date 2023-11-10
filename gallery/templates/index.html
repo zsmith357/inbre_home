@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inbre Workshop</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Inbre Workshop Home Page</h1>
+    <div class="background-image" style="background-image: url('{{ background_image.image.url }}');"></div>
+    <div class="section-header">Site Links</div>
+    <div class="site-links">
+        {% for link in links %}
+            <a class="link-button" href="{{ link.url }}">{{ link.title }}</a><br>
+        {% endfor %}
+    </div>
+
+    <div class="gallery-section">
+        <div class="section-header">Image Gallery</div>
+        <div class="gallery">
+            {% for image in images %}
+                <img src="{{ image.image.url }}" alt="{{ image.caption }}">
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
+
